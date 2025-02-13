@@ -1,28 +1,28 @@
 decision_default:
   default: true
   pcc_rules:
-  - internet-rule-qos-constrained
+  - internet-rule
 decision_dnn:
   dnn: default
   pcc_rules:
-  - internet-rule-qos-constrained
+  - internet-rule
 decision_slice:
   pcc_rules:
-  - internet-rule-qos-constrained
+  - internet-rule
   slice:
     sd: 00007B
     sst: 222
 decision_supi1:
   pcc_rules:
-  - internet-rule-qos-constrained
-  # - edge-rule-qos-unlimited
+  - internet-rule
+  # - edge-rule
   supi_imsi: '208950000000031'
 decision_supi2:
   pcc_rules:
-  - internet-rule-qos-unlimited
-  # - edge-rule-qos-unlimited
+  - internet-rule
+  # - edge-rule
   supi_imsi: '208950000000032'
 decision_supi3:
   pcc_rules:
-  - internet-rule-qos-constrained
+  - internet-rule
   supi_imsi: '208950000000033'

@@ -4,6 +4,12 @@ services:
         image: mysql:8.0
         volumes:
             - ./database/oai_db2.sql:/docker-entrypoint-initdb.d/oai_db.sql
+            - ./database/pcf/DnnPolicyDecision.sql:/docker-entrypoint-initdb.d/DnnPolicyDecision.sql
+            - ./database/pcf/PccRuleODB.sql:/docker-entrypoint-initdb.d/PccRuleODB.sql
+            - ./database/pcf/QosData.sql:/docker-entrypoint-initdb.d/QosData.sql
+            - ./database/pcf/SlicePolicyDecision.sql:/docker-entrypoint-initdb.d/SlicePolicyDecision.sql
+            - ./database/pcf/SupiPolicyDecision.sql:/docker-entrypoint-initdb.d/SupiPolicyDecision.sql
+            - ./database/pcf/TrafficControlDataODB.sql:/docker-entrypoint-initdb.d/TrafficControlDataODB.sql
             - ./healthscripts/mysql-healthcheck2.sh:/tmp/mysql-healthcheck.sh
         environment:
             - TZ=Europe/Paris

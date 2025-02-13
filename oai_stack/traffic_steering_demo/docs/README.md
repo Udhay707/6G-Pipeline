@@ -58,3 +58,11 @@ Check the log of UE1 and UE2, and by right, UE1 should have an IP address of `12
 docker exec -it gnbsim-vpp bash
 ip a | grep 12.1.1
 ```
+
+
+Documentations
+---
+
+### Policy Control Function:
+* [PCF_SBI.md](PCF_SBI.md) introduces the service-based interface for the Policy Control Function.
+* [PCF_POLICY_CONFIG.md](PCF_POLICY_CONFIG.md) explains how to configure the PCF policies for traffic steering.

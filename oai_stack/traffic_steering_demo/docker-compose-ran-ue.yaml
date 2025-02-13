@@ -46,7 +46,7 @@ services:
         environment:
             - MCC=208
             - MNC=95
-            - GNBID=5
+            - GNBID=6
             - TAC=0x00a000
             - SST=222
             - SD=00007b
@@ -83,8 +83,8 @@ services:
 
 networks:
     public_net:
-        external:
-            name: demo-oai-public-net
+        name: demo-oai-public-net
+        external: true
     public_net_access:
-        external:
-            name: oai-public-access
+        name: oai-public-access
+        external: true

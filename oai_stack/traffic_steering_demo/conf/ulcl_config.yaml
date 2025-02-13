@@ -220,6 +220,7 @@ dnns:
     ipv4_subnet: "14.1.1.2/24"
 
 pcf:
+  enable_policy_provisioning_api: yes # Use db instead of yaml, enables dynamic pcc rule creation via API
   local_policy:
     policy_decisions_path: /openair-pcf/policies/policy_decisions
     pcc_rules_path: /openair-pcf/policies/pcc_rules

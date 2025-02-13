@@ -8,6 +8,10 @@ git clone https://gitlab.eurecom.fr/yuntang/oai-cn5g-pcf.git
 cd oai-cn5g-pcf
 git checkout develop
 
+# update the submodules
+git submodule init
+git submodule update
+
 # build the image
 docker build -t oai-pcf:local -f docker/Dockerfile.pcf.ubuntu .
 ```
